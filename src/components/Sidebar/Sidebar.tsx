@@ -4,9 +4,9 @@ import profilePic from '../../assets/informal picture-resized.png'
 import Image from 'next/image'
 const Sidebar = () => {
   return (
-    <div className='border-[1.5px] border-slate-700/50 rounded-3xl flex flex-col justify-between items-center gap-6 absolute top-1/2 left-24 -translate-y-1/2 px-16 py-12 shadow-lg shadow-gray-600/30 bg-black/20 backdrop-blur-xl'>
+    <div className='border-[1.5px] border-slate-700/50 rounded-3xl flex flex-col justify-between items-center gap-6 top-1/2 left-24 px-16 py-12 shadow-lg shadow-gray-600/30 bg-black/20 backdrop-blur-xl h-max'>
       <header className=''>
-        <Text size='xl'>Juan Carlo Senin</Text>
+        <Text size='2xl'>Juan Carlo Senin</Text>
       </header>
       {/* IMAGE */}
       <div className=''>

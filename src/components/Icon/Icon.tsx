@@ -1,14 +1,6 @@
 import cx from 'clsx'
-import { ReactNode } from 'react'
-import { IconType } from 'react-icons/lib'
 import Tooltip from '../Tooltip/Tooltip'
-import { TooltipProps } from '../Tooltip/tooltip'
-
-interface IconProps extends TooltipProps {
-  icon: ReactNode
-  className?: string
-  tooltip: boolean
-}
+import { IconProps } from './types'
 
 const Icon = ({
   icon,

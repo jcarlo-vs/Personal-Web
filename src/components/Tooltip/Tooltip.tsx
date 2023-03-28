@@ -1,5 +1,6 @@
 import cx from 'clsx'
-import { TooltipProps } from './tooltip'
+import React from 'react'
+import { TooltipProps } from './types'
 
 const Tooltip = ({ message, fontSize }: TooltipProps) => {
   return (
