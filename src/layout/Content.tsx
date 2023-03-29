@@ -1,12 +1,14 @@
 import { ReactNode } from 'react'
+import { ContentProps } from './types'
+import cx from 'clsx'
 
-interface ContentProps {
-  children: ReactNode
-}
-
-const Content = ({ children }: ContentProps) => {
+const Content = ({ children, className }: ContentProps) => {
   return (
-    <div className='px-2 py-7 h-screen flex flex-col justify-center'>
+    <div
+      className={cx(
+        'px-2 py-7 flex flex-col min-h-screen max-[1024px]:px-5 justify-center',
+        className
+      )}>
       {children}
     </div>
   )

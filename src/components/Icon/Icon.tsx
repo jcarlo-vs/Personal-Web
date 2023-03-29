@@ -7,7 +7,7 @@ const Icon = ({
   message,
   fontSize,
   tooltip,
-  className = '[&>*]:h-8 [&>*]:w-8 [&>*]:text-gray-600 [&>*]:hover:text-purple-600',
+  className = '[&>*]:h-5 [&>*]:w-5 [&>*]:text-gray-600 [&>*]:hover:text-purple-600',
 }: IconProps) => {
   return (
     <div className='relative '>

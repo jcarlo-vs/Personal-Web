@@ -21,9 +21,9 @@ export default function Home() {
         }}
         className='flex items-center justify-evenly bg-no-repeat bg-cover bg-center h-screen'>
         <section className='bg-black/80 flex items-center w-full justify-evenly h-screen fixed'>
-          <Sidebar />
+          {/* <Sidebar /> */}
           <PageSection />
-          <Menu />
+          {/* <Menu /> */}
         </section>
       </div>
       {/* </div> */}

@@ -4,7 +4,7 @@ import React, { ReactNode } from 'react'
 import { TextProps } from './types'
 
 const Text = ({ size, className, children }: TextProps) => {
-  return <div className={cx(`!text-${size}`, className)}>{children}</div>
+  return <p className={cx(`!text-${size}`, className)}>{children}</p>
 }
 
 export default Text

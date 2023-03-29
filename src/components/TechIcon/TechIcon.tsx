@@ -3,8 +3,10 @@ import { TechIconProps } from './types'
 
 const TechIcon = ({ image, title }: TechIconProps) => {
   return (
-    <div className='w-20 flex flex-col justify-center items-center border-[1.5px] border-slate-700/50 backdrop-blur-xl p-1 hover:-translate-y-1 transition-all '>
-      <p className='text-[8px] font-thin font-sans tracking-widest'>{title}</p>
+    <div className='w-20 flex flex-col justify-center items-center border-[1.5px] border-slate-700/50 backdrop-blur-xl p-1 hover:-translate-y-1 transition-all max-[768px]:w-14'>
+      <p className='text-[8px] font-thin font-sans text-center tracking-widest'>
+        {title}
+      </p>
       <Image
         src={image}
         width={200}

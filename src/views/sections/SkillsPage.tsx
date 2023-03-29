@@ -14,6 +14,15 @@ import {
   personalLogo,
   ps,
   reactjs,
+  bootstrap,
+  firebase,
+  framer,
+  git,
+  material,
+  nextjs,
+  styledComponents,
+  tailwind,
+  ts,
 } from '@/assets/icons'
 import TechIcon from '@/components/TechIcon/TechIcon'
 
@@ -30,7 +39,7 @@ const SkillsPage = () => {
       <div>
         <Text
           size='2xl'
-          className='font-mono text-4xl'>
+          className='font-mono text-4xl max-[1024px]:!text-3xl max-[768px]:!text-2xl'>
           <span
             style={{
               background: 'linear-gradient(90deg,#00dbde,#fc00ff)',
@@ -38,7 +47,7 @@ const SkillsPage = () => {
               WebkitTextFillColor: 'transparent',
               textShadow: '#9c0a88 1px 20px 100px',
             }}
-            className='mr-5'>
+            className='mr-3'>
             Technologies
           </span>
           i've been working with
@@ -46,7 +55,7 @@ const SkillsPage = () => {
       </div>
 
       {/* FRONTEND */}
-      <section className='border mt-10'>
+      <section className=' mt-10'>
         <div className='mb-3'>
           <span
             style={{
@@ -55,14 +64,14 @@ const SkillsPage = () => {
               WebkitTextFillColor: 'transparent',
               textShadow: '#9c0a88 1px 20px 100px',
             }}
-            className='py-9 tracking-widest'>
+            className='py-9 tracking-widest text-white font-thin'>
             FRONT-END
           </span>
         </div>
 
         {/* TECH ICONS */}
 
-        <div className='flex gap-3'>
+        <div className='flex gap-3 flex-wrap max-w-md'>
           <TechIcon
             image={html}
             title='HTML'
@@ -72,18 +81,47 @@ const SkillsPage = () => {
             title='CSS'
           />
           <TechIcon
+            image={tailwind}
+            title='TAILWIND'
+          />
+          <TechIcon
+            image={bootstrap}
+            title='BOOTSTRAP'
+          />
+          <TechIcon
+            image={framer}
+            title='FRAMER'
+          />
+          {/* <TechIcon
+            image={material}
+            title='MATERIAL UI'
+          /> */}
+          <TechIcon
+            image={styledComponents}
+            title='STYLED COMPONENTS'
+          />
+
+          <TechIcon
             image={js}
             title='JAVASCRIPT'
+          />
+          <TechIcon
+            image={ts}
+            title='TYPESCRIPT'
           />
           <TechIcon
             image={reactjs}
             title='REACT JS'
           />
+          <TechIcon
+            image={nextjs}
+            title='NEXT JS'
+          />
         </div>
       </section>
 
       {/* BACKEND */}
-      <section className='border mt-10'>
+      <section className=' mt-10'>
         <div className='mb-3'>
           <span
             style={{
@@ -117,7 +155,7 @@ const SkillsPage = () => {
 
       {/* OTHER TOOLS */}
 
-      <section className='border mt-4'>
+      <section className=' mt-4'>
         <div className='mb-3'>
           <span
             style={{
@@ -127,13 +165,18 @@ const SkillsPage = () => {
               textShadow: '#9c0a88 1px 20px 100px',
             }}
             className='py-9 tracking-widest'>
-            DESIGN
+            OTHER TOOLS
           </span>
         </div>
 
         {/* TECH ICONS */}
 
         <div className='flex gap-3'>
+          <TechIcon
+            image={git}
+            title='GIT'
+          />
+
           <TechIcon
             image={ps}
             title='PHOTOSHOP'
