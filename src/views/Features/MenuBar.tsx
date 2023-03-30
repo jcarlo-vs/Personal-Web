@@ -8,10 +8,11 @@ import cx from 'clsx'
 const Menu = () => {
   return (
     <div
+      id='mediaOn'
       className={cx(
-        'animate__animated animate__bounceIn border-[1px] border-slate-700/100  right-[6%] h-max p-4 py-7 gap-8 flex flex-col rounded-full shadow-lg shadow-gray-600/30 bg-black/20 backdrop-blur-2xl fixed top-[30%] -translate-y-1/2',
+        'animate__animated animate__bounceIn border-[1px] border-slate-700/100  right-[6%] h-max p-4 py-7 gap-8 flex flex-col rounded-full shadow-lg shadow-gray-600/30 bg-black/20 backdrop-blur-2xl fixed bottom-[30%]',
         // max 1450px
-        'max-[1450px]:!flex-row max-[1450px]:py-4 max-[1450px]:top-[90%] max-[1450px]:right-1/2 max-[1450px]:!translate-x-[50%] max-[1450px]:!-translate-y-0'
+        'max-[1250px]:flex-row max-[1250px]:w-full max-[1250px]:right-0 max-[1250px]:!bottom-0 mb-3 max-[1250px]:py-4'
       )}>
       <Icon
         tooltip

@@ -138,3 +138,17 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #7c7171;
 }
+
+.mediaOn {
+  @media screen and (max-width: 1450px) {
+    --webkit-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+#mediaOn {
+  @media screen and (max-width: 1450px) {
+    --webkit-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}

@@ -12,7 +12,7 @@ const Icon = ({
   className = '[&>*]:h-5 [&>*]:w-5 [&>*]:text-gray-600 [&>*]:hover:text-purple-600',
 }: IconProps) => {
   return (
-    <div className='relative'>
+    <div className='relative flex-1 flex justify-center'>
       <a href={`#${message}`}>
         <div className={cx(className, `hover:cursor-pointer peer`)}>{icon}</div>
       </a>
