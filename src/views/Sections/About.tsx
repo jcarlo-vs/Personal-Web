@@ -14,7 +14,6 @@ const About = () => {
     triggerOnce: true,
   })
 
-  console.log(inView)
   return (
     <Section
       id='About'

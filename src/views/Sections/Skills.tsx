@@ -35,7 +35,6 @@ const Skills = () => {
     triggerOnce: true,
   })
 
-  console.log(inView)
   return (
     <div>
       <Section

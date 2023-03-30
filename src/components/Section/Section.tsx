@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 import cx from 'clsx'
 import { SectionProps } from './types'
@@ -13,20 +14,6 @@ const Section = ({
   name,
   indicator,
 }: SectionProps) => {
-  const [size, setSize] = useState(window.innerWidth)
-
-  const checkWindow = () => {
-    setSize(window.innerWidth)
-  }
-  useEffect(() => {
-    window.addEventListener('resize', checkWindow)
-
-    return () => window.removeEventListener('resize', checkWindow)
-  })
-  const mobileView = () => {
-    return size <= 1450 ? true : false
-  }
-
   return (
     <div
       id={`${id}`}
@@ -43,7 +30,7 @@ const Section = ({
         'px-2 py-7 flex flex-col min-h-screen max-[1024px]:px-5 justify-center',
         className
       )}>
-      {(!indicator || !mobileView()) && (
+      {!indicator && (
         <Indicator
           size='xl'
           icon={icon}
