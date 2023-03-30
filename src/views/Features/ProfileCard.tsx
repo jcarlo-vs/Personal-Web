@@ -29,7 +29,7 @@ const Profile = () => {
       <section className='items-center justify-center flex flex-col gap-3 max-[768px]:gap-1'>
         <div className='relative'>
           <Text
-            size='2xl'
+            size='xl'
             className='font-bold after:content-[` `] after:bg-white after:absolute after:text-white after:h-[2px] after:w-full after:bottom-2 after:left-0 mb-5 max-[768px]:!text-md'>
             FULL STACK DEVELOPER
           </Text>

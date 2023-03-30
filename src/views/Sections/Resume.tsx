@@ -48,7 +48,7 @@ const Resume = () => {
           <div className='flex flex-col gap-2'>
             <Text
               size='md'
-              className='max-w-2xl font-light font-sans text-pink-500 text-md'>
+              className='max-w-2xl font-light font-sans !text-pink-500 text-md'>
               DECEMBER 2022 - PRESENT
             </Text>
             <Text
@@ -66,7 +66,7 @@ const Resume = () => {
           <div className='flex flex-col gap-2'>
             <Text
               size='md'
-              className='max-w-2xl font-light font-sans text-pink-500 text-md'>
+              className='max-w-2xl font-light font-sans !text-pink-500 text-md'>
               MARCH 2022 - DECEMBER 2022
             </Text>
             <Text
@@ -79,7 +79,7 @@ const Resume = () => {
           <div className='flex flex-col gap-2'>
             <Text
               size='md'
-              className='max-w-2xl font-light font-sans text-pink-500 text-md'>
+              className='max-w-2xl font-light font-sans !text-pink-500 text-md'>
               2017 - 2020
             </Text>
             <Text
@@ -96,7 +96,7 @@ const Resume = () => {
           <div className='flex flex-col gap-2'>
             <Text
               size='md'
-              className='max-w-2xl font-light font-sans text-pink-500 text-md'>
+              className='max-w-2xl font-light font-sans !text-pink-500 text-md'>
               2013 - 2018
             </Text>
             <Text
