@@ -1,19 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
-import Indicator from '@/components/Indicator/Indicator'
+import { Section } from '@/components/Section'
 import { Text } from '@/components/Text'
-import Content from '@/layout/Content'
 import { BsCassette } from 'react-icons/bs'
 
-const ResumePage = () => {
+const Resume = () => {
   return (
-    <Content>
-      <Indicator
-        size='xl'
-        icon={<BsCassette />}
-        className='text-sm'>
-        Resume
-      </Indicator>
-
+    <Section
+      id='Resume'
+      size='xl'
+      icon={<BsCassette />}
+      name='Resume'>
       <div>
         <Text
           size='2xl'
@@ -99,8 +95,8 @@ const ResumePage = () => {
           </Text>
         </div>
       </div>
-    </Content>
+    </Section>
   )
 }
 
-export default ResumePage
+export default Resume

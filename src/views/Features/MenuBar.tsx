@@ -3,10 +3,16 @@ import { BiHome } from 'react-icons/bi'
 import { BsPersonCircle, BsBriefcase, BsEnvelope } from 'react-icons/bs'
 import { SiReactos } from 'react-icons/si'
 import { GiBookshelf } from 'react-icons/gi'
+import cx from 'clsx'
 
 const Menu = () => {
   return (
-    <div className='border-[1px] border-slate-700/100  bottom-1/2 right-[6%] h-max p-4 py-7 gap-8 flex flex-col rounded-full shadow-lg shadow-gray-600/30 bg-black/20 backdrop-blur-2xl fixed top-1/2 -translate-y-1/2 max-[1250px]:static max-[1250px]:hidden'>
+    <div
+      className={cx(
+        'animate__animated animate__bounceInRight border-[1px] border-slate-700/100  right-[6%] h-max p-4 py-7 gap-8 flex flex-col rounded-full shadow-lg shadow-gray-600/30 bg-black/20 backdrop-blur-2xl fixed top-[30%] -translate-y-1/2',
+        // max 1250px
+        ' max-[1250px]:!flex-row max-[1250px]:py-4  max-[1250px]:top-[93%] max-[1250px]:!translate-y-0 max-[1250px]:right-1/2 max-[1250px]:translate-x-1/2'
+      )}>
       <Icon
         tooltip
         fontSize='xs'

@@ -1,14 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
-import Text from '@/components/Text/Text'
-import Content from '@/layout/Content'
-
-const HomePage = () => {
+import Image from 'next/image'
+import atomImage from '../../assets/images/atomImage.png'
+import { BiHome } from 'react-icons/bi'
+import { Text } from '@/components/Text'
+import { Section } from '@/components/Section'
+const Introduce = () => {
   return (
-    <Content className='mt-50 max-[1250px]:mt-20'>
+    <Section
+      icon={<BiHome />}
+      name='Introduce'
+      size='sm'
+      indicator
+      className='mt-50 max-[1250px]:mt-20 relative animate__animated animate__fadeIn '
+      id='Home'>
       <div className='m-w-[800px] flex mb-20 max-[768px]:mb-14'>
         <Text
-          size='2xl'
-          className='!text-9xl font-thin max-[1024px]:!text-8xl max-[768px]:!text-6xl max-[500px]:!text-5xl'>
+          size='9xl'
+          className='font-thin max-[1024px]:!text-8xl max-[768px]:!text-6xl max-[500px]:!text-5xl'>
           Hi, I'm
         </Text>
         <div
@@ -24,26 +32,37 @@ const HomePage = () => {
 
       <div className='[&>*]:mb-8 [&>*]:mt-8 max-[768px]:[&>*]:mt-3'>
         <Text
-          className='text-5xl font-semibold max-[1024px]:!text-3xl max-[768px]:!text-xl'
-          size='xl'>
+          className='font-medium font-mono max-[1024px]:!text-3xl max-[768px]:!text-xl '
+          size='4xl'>
           I Build Things For The Web.
         </Text>
         <Text
-          className='text-3xl font-thin max-[1024px]:!text-2xl max-[768px]:!text-xl'
-          size='xl'>
+          className='font-thin max-[1024px]:!text-2xl max-[768px]:!text-xl text-blue-300'
+          size='2xl'>
           currently working on both
         </Text>
         <Text
-          className='text-3xl font-semibold max-[1024px]:!text-2xl max-[768px]:!text-xl'
-          size='xl'>
+          className='font-medium font-mono max-[1024px]:!text-2xl max-[768px]:!text-xl z-10'
+          size='3xl'>
           FRONT-END and BACK-END Development.
         </Text>
       </div>
-    </Content>
+
+      <Image
+        src={atomImage}
+        width={300}
+        height={300}
+        alt='atom image'
+        className='absolute right-0 bottom-20 z-0 max-[768px]:!w-[200px]
+          max-[768px]:bottom-52
+          '
+        style={{ filter: 'drop-shadow(0 0 2rem crimson' }}
+      />
+    </Section>
   )
 }
 
-export default HomePage
+export default Introduce
 
 // EXTRAS
 {

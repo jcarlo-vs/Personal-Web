@@ -6,6 +6,7 @@ import blob from '../../assets/images/blob.png'
 import TechProject from '../TechProject/TechProject'
 import { ProjectProps } from './types'
 import cx from 'clsx'
+import Link from 'next/link'
 
 const Project = ({
   invert,
@@ -13,6 +14,8 @@ const Project = ({
   description,
   projectTitle,
   image,
+  demolink,
+  githublink,
 }: ProjectProps) => {
   return (
     <div
@@ -43,7 +46,7 @@ const Project = ({
         {/* TITLE */}
         <Text
           size='2xl'
-          className='font-mono text-4xl mb-10 max-[768px]:text-xl'>
+          className='font-mono mb-10 max-[768px]:text-xl'>
           <span
             style={{
               background: 'linear-gradient(90deg,#00dbde,#fc00ff)',
@@ -70,10 +73,31 @@ const Project = ({
               />
             )
           })}
-          {/* <TechProject tech='MONGO DB' />
-          <TechProject tech='EXPRESS JS' />
-          <TechProject tech='REACT JS' /> */}
         </article>
+
+        {/* DEMO , GITHUB */}
+        <div className='flex gap-3 mt-5'>
+          <Link
+            href={demolink}
+            target='_blank'
+            className='hover:cursor-pointer hover:-translate-y-1 transition-all'>
+            <Text
+              size='xs'
+              className='border p-2 tracking-widest border-slate-700 text-pink-500'>
+              LIVE DEMO
+            </Text>
+          </Link>
+          <Link
+            href={githublink}
+            target='_blank'
+            className='hover:cursor-pointer hover:-translate-y-1 transition-all'>
+            <Text
+              size='xs'
+              className='border p-2 tracking-widest border-slate-700 text-blue-500'>
+              GITHUB
+            </Text>
+          </Link>
+        </div>
       </div>
     </div>
   )

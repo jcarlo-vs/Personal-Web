@@ -1,23 +1,25 @@
-import Text from '../Text/Text'
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'
 import profilePic from '../../assets/informal picture-resized.png'
 import Image from 'next/image'
 import Link from 'next/link'
-const Sidebar = () => {
+import 'animate.css'
+import { Text } from '@/components/Text'
+const Profile = () => {
   return (
-    <div className='border-[1.5px] border-slate-700/50 rounded-3xl flex flex-col justify-between items-center gap-6 top-1/2 left-[6%] px-14 py-12 shadow-lg shadow-gray-700/30 bg-black/20 backdrop-blur-xl fixed -translate-y-1/2 max-[1250px]:static max-[1250px]:-translate-y-0 max-[1250px]:m-w-[600px] max-[1250px]:min-w-[500px] max-[1250px]:m-auto max-[1250px]:mt-28 max-[768px]:!py-5 max-[768px]:min-w-[400px] max-[425px]:min-w-[300px]'>
-      <header className=''>
+    <section className='border-[1.5px] border-slate-700/60 rounded-3xl flex flex-col justify-between items-center gap-6 top-[18%] left-[6%] px-14 py-12 shadow-lg shadow-gray-700/30 bg-black/20 backdrop-blur-xl fixed -translate-y-1/2 max-[1250px]:static max-[1250px]:-translate-y-0 max-[1250px]:m-w-[600px] max-[1250px]:min-w-[500px] max-[1250px]:m-auto max-[1250px]:mt-28 max-[768px]:!py-5 max-[768px]:min-w-[400px] max-[425px]:min-w-[300px] animate__animated animate__bounceInLeft'>
+      {/* NAME */}
+      <header>
         <Text
           size='2xl'
-          className='font-thin font-sans text-2xl uppercase tracking-wider max-[768px]:!text-xl'>
+          className='uppercase font-thin'>
           Juan Carlo Senin
         </Text>
       </header>
       {/* IMAGE */}
-      <div className=''>
+      <div>
         <Image
           src={profilePic}
-          alt='profilepic'
+          alt='Profile Picture'
           height={100}
           width={200}
         />
@@ -28,8 +30,8 @@ const Sidebar = () => {
         <div className='relative'>
           <Text
             size='2xl'
-            className='font-bold after:content-[`hello world`] after:bg-white after:absolute after:text-white after:h-[2px] after:w-full after:bottom-2 after:left-0 mb-5 max-[768px]:!text-md'>
-            Web Developer
+            className='font-bold after:content-[` `] after:bg-white after:absolute after:text-white after:h-[2px] after:w-full after:bottom-2 after:left-0 mb-5 max-[768px]:!text-md'>
+            Fullstack Developer
           </Text>
         </div>
         <Text
@@ -39,7 +41,7 @@ const Sidebar = () => {
         </Text>
         <Text
           size='xs'
-          className='text-gray-400 text-xs mt-7 max-[768px]:!text-[10px]'>
+          className='text-gray-400 mt-7 max-[768px]:!text-[10px]'>
           © 2023 Juan. All Rights Reserved
         </Text>
       </section>
@@ -72,8 +74,8 @@ const Sidebar = () => {
           </div>
         </Link>
       </footer>
-    </div>
+    </section>
   )
 }
 
-export default Sidebar
+export default Profile

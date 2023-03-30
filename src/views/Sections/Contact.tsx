@@ -1,21 +1,24 @@
+'use client'
 /* eslint-disable react/no-unescaped-entities */
-import Indicator from '@/components/Indicator/Indicator'
-import Input from '@/components/Input/Input'
+import { Input } from '@/components/Input'
+import { Section } from '@/components/Section'
 import { Text } from '@/components/Text'
 import TextArea from '@/components/TextArea/TextArea'
-import Content from '@/layout/Content'
+import { FormEvent } from 'react'
 import { BsEnvelope } from 'react-icons/bs'
 
-const ContactPage = () => {
-  return (
-    <Content className='mb-32'>
-      <Indicator
-        size='xl'
-        icon={<BsEnvelope />}
-        className='text-sm'>
-        CONTACT
-      </Indicator>
+const Contact = () => {
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault()
+  }
 
+  return (
+    <Section
+      className='mb-32'
+      id='Contact'
+      size='sm'
+      icon={<BsEnvelope />}
+      name='Contact'>
       <div className='mb-8'>
         <Text
           size='2xl'
@@ -41,7 +44,9 @@ const ContactPage = () => {
       </Text>
       {/* CONTACT SECTION */}
       <div className=''>
-        <form className='flex flex-col gap-5'>
+        <form
+          className='flex flex-col gap-5'
+          onSubmit={onSubmit}>
           <Input
             label='FULL NAME'
             placeholder='Your Full Name'
@@ -57,6 +62,7 @@ const ContactPage = () => {
             className='resize-none w-[500px] h-[100px] max-[768px]:!w-[350px] max-[425px]:!w-[300px]'
           />
           <button
+            type='submit'
             className='max-w-sm border border-slate-500/50 font-thin text-md rounded-2xl p-2 hover:cursor-pointer hover:-translate-y-2 transition-all tracking-wider'
             style={{
               background: 'linear-gradient(90deg,#00dade80,#fb00ff7e)',
@@ -65,11 +71,11 @@ const ContactPage = () => {
           </button>
         </form>
       </div>
-    </Content>
+    </Section>
   )
 }
 
-export default ContactPage
+export default Contact
 
 // WebkitBackgroundClip: 'text',
 // WebkitTextFillColor: 'transparent',

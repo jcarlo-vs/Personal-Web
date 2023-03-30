@@ -1,21 +1,18 @@
-import Indicator from '@/components/Indicator/Indicator'
-import Project from '@/components/Project/Project'
 import { Text } from '@/components/Text'
-import Content from '@/layout/Content'
 import { BsBriefcase } from 'react-icons/bs'
 import notelify from '../../assets/images/notelifyv1.png'
 import cryptometer from '../../assets/images/cryptometerv1.png'
 import picabook from '../../assets/images/picabookv1.png'
-const PortfolioPage = () => {
+import { Project } from '@/components/Project'
+import { Section } from '@/components/Section'
+const Portfolio = () => {
   return (
-    <Content>
-      <Indicator
-        size='xl'
-        icon={<BsBriefcase />}
-        className='text-sm'>
-        PORTFOLIO
-      </Indicator>
-
+    <Section
+      snap='start'
+      id='Projects'
+      size='sm'
+      icon={<BsBriefcase />}
+      name='PORTFOLIO'>
       <div>
         <Text
           size='2xl'
@@ -35,6 +32,8 @@ const PortfolioPage = () => {
       {/* PROJECT AREA */}
       <div className='border-white mt-14 flex flex-col gap-32'>
         <Project
+          githublink='https://github.com/jcarlo-vs/NOTELIFY-APP'
+          demolink='https://notelify-app.vercel.app/landing'
           image={notelify}
           technologyUsed={['MONGO DB', 'EXPRESS JS', 'REACT JS']}
           projectTitle='NOTELIFY APP'
@@ -43,6 +42,8 @@ const PortfolioPage = () => {
           your own data.'
         />
         <Project
+          demolink='https://crypto-meter.vercel.app/'
+          githublink='https://github.com/jcarlo-vs/CRYPTO-METER'
           invert
           image={cryptometer}
           technologyUsed={['REACT JS', 'REDUX']}
@@ -50,14 +51,16 @@ const PortfolioPage = () => {
           description={`An all-in-one Crypto Library which users can browse most trusted Exchanges, thousands of Cryptocurrencies, Crypto News, Crypto Beginner's Guide and Crypto calculator.`}
         />
         <Project
+          demolink='https://picabook-app.vercel.app/login'
+          githublink='https://github.com/jcarlo-vs/picabook-app'
           image={picabook}
           technologyUsed={['MONGO DB', 'EXPRESS JS', 'REACT JS']}
           projectTitle='PICABOOK'
           description={`A Social Media app, which let you share your own photos to public, give caption and view other's profile.`}
         />
       </div>
-    </Content>
+    </Section>
   )
 }
 
-export default PortfolioPage
+export default Portfolio

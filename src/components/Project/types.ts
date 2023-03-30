@@ -8,4 +8,6 @@ export interface ProjectProps extends TechProjectProps {
   projectTitle: string
   technologyUsed: string[]
   image?: any
+  demolink: string
+  githublink: string
 }
