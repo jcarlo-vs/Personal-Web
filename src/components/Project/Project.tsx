@@ -1,8 +1,5 @@
-import notelifyApp from '../../assets/images/appNotelify.png'
-import notelifyv1 from '../../assets/images/notelifyv1.png'
 import Image from 'next/image'
 import { Text } from '../Text'
-import blob from '../../assets/images/blob.png'
 import TechProject from '../TechProject/TechProject'
 import { ProjectProps } from './types'
 import cx from 'clsx'
