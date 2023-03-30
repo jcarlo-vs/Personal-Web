@@ -16,17 +16,17 @@ const About = () => {
 
   console.log(inView)
   return (
-    <div
-      ref={ref}
-      className={cx(
-        'transition delay-300',
-        inView ? 'blur-0' : 'blur-md transition delay-300'
-      )}>
-      <Section
-        id='About'
-        icon={<BsPerson />}
-        name='About'
-        size='sm'>
+    <Section
+      id='About'
+      icon={<BsPerson />}
+      name='About'
+      size='sm'>
+      <div
+        ref={ref}
+        className={cx(
+          'transition delay-300',
+          inView ? 'blur-0' : 'blur-md transition delay-300'
+        )}>
         <div>
           <Text
             size='xl'
@@ -139,8 +139,8 @@ const About = () => {
             </Text>
           </div>
         </div>
-      </Section>
-    </div>
+      </div>
+    </Section>
   )
 }
 

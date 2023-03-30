@@ -6,7 +6,7 @@ import 'animate.css'
 import { Text } from '@/components/Text'
 const Profile = () => {
   return (
-    <section className='border-[1.5px] border-slate-700/60 rounded-3xl flex flex-col justify-between items-center gap-6 top-[18%] left-[6%] px-14 py-12 shadow-lg shadow-gray-700/30 bg-black/20 backdrop-blur-xl fixed -translate-y-1/2 max-[1250px]:static max-[1250px]:-translate-y-0 max-[1250px]:m-w-[600px] max-[1250px]:min-w-[500px] max-[1250px]:m-auto max-[1250px]:mt-28 max-[768px]:!py-5 max-[768px]:min-w-[400px] max-[425px]:min-w-[300px] animate__animated animate__bounceInLeft'>
+    <section className='border-[1.5px] border-slate-700/60 rounded-3xl flex flex-col justify-between items-center gap-6 top-[18%] left-[6%] px-14 py-12 shadow-lg shadow-gray-700/30 bg-black/20 backdrop-blur-xl fixed -translate-y-1/2 max-[1450px]:static max-[1450px]:-translate-y-0 max-[1450px]:m-w-[600px] max-[1450px]:min-w-[500px] max-[1450px]:m-auto max-[1450px]:mt-28 max-[768px]:!py-5 max-[768px]:min-w-[400px] max-[425px]:min-w-[300px] animate__animated animate__bounceInLeft'>
       {/* NAME */}
       <header>
         <Text
@@ -31,7 +31,7 @@ const Profile = () => {
           <Text
             size='2xl'
             className='font-bold after:content-[` `] after:bg-white after:absolute after:text-white after:h-[2px] after:w-full after:bottom-2 after:left-0 mb-5 max-[768px]:!text-md'>
-            Fullstack Developer
+            FULL STACK DEVELOPER
           </Text>
         </div>
         <Text

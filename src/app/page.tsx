@@ -29,14 +29,14 @@ export default function Home() {
       }}>
       <section className='bg-black/50 flex items-center w-full justify-evenly h-screen fixed'>
         <div
-          className='overflow-y-scroll overflow-x-hidden h-screen w-screen gap-60 flex max-[1250px]:!flex-col max-[1250px]:gap-5 relative'
+          className='overflow-y-scroll overflow-x-hidden h-screen w-screen gap-60 flex max-[1450px]:!flex-col max-[1450px]:gap-5 relative'
           style={{ scrollSnapType: 'y proximity' }}>
           <Profile />
-          <div className='flex gap-40 flex-col   m-auto ml-[33%]  max-w-3xl max-[1250px]:ml-0 max-[1250px]:!m-auto '>
-            {/* <Introduce />
+          <div className='flex gap-40 flex-col m-auto ml-[33%]  max-w-3xl max-[1450px]:ml-0 max-[1450px]:!m-auto '>
+            <Introduce />
             <About />
             <Resume />
-            <Skills /> */}
+            <Skills />
             <Portfolio />
             <Contact />
           </div>

@@ -48,7 +48,7 @@ const Skills = () => {
           ref={ref}
           className={cx(
             'transition duration-500 ease-in',
-            inView ? '-translate-x-0 blur-0' : '-translate-x-[300px] blur-lg'
+            inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-lg'
           )}>
           <Text
             size='2xl'
@@ -80,9 +80,7 @@ const Skills = () => {
               ref={ref}
               className={cx(
                 'py-9 tracking-widest transition duration-700 ease-in',
-                inView
-                  ? '-translate-x-0 blur-0'
-                  : '-translate-x-[300px] blur-lg'
+                inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-lg'
               )}>
               FRONT-END
             </span>
@@ -94,7 +92,7 @@ const Skills = () => {
             ref={ref}
             className={cx(
               'flex gap-3 flex-wrap max-w-md transition duration-700 ease-in',
-              inView ? '-translate-x-0 blur-0' : '-translate-x-[300px] blur-sm'
+              inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-sm'
             )}>
             <TechIcon
               image={html}
@@ -154,9 +152,7 @@ const Skills = () => {
               ref={ref}
               className={cx(
                 'py-9 tracking-widest transition duration-700 delay-200 ease-in',
-                inView
-                  ? '-translate-x-0 blur-0'
-                  : '-translate-x-[300px] blur-lg'
+                inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-lg'
               )}>
               BACK-END
             </span>
@@ -168,7 +164,7 @@ const Skills = () => {
             ref={ref}
             className={cx(
               'flex gap-3 flex-wrap max-w-md transition duration-700 delay-200 ease-in',
-              inView ? '-translate-x-0 blur-0' : '-translate-x-[300px] blur-sm'
+              inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-sm'
             )}>
             <TechIcon
               image={mongoDB}
@@ -199,9 +195,7 @@ const Skills = () => {
               ref={ref}
               className={cx(
                 'py-9 tracking-widest max-w-md transition duration-700 delay-300 ease-in',
-                inView
-                  ? '-translate-x-0 blur-0'
-                  : '-translate-x-[300px] blur-lg'
+                inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-lg'
               )}>
               OTHER TOOLS
             </span>
@@ -213,7 +207,7 @@ const Skills = () => {
             ref={ref}
             className={cx(
               'flex gap-3 flex-wrap max-w-md transition duration-700 delay-300 ease-in',
-              inView ? '-translate-x-0 blur-0' : '-translate-x-[300px] blur-sm'
+              inView ? '-translate-x-0 blur-0' : '-translate-x-[60%] blur-sm'
             )}>
             <TechIcon
               image={git}
