@@ -38,7 +38,7 @@ const Introduce = () => {
           I Build Things For The Web.
         </Text>
         <Text
-          className='font-thin max-[1024px]:!text-2xl max-[768px]:!text-xl text-blue-300'
+          className='font-thin max-[1024px]:!text-2xl max-[768px]:!text-xl !text-blue-300'
           size='2xl'>
           currently working on both
         </Text>
