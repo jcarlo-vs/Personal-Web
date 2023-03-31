@@ -34,7 +34,7 @@ const Project = ({
           height={0}
           width={280}
           alt='notelifyApp'
-          className='max-w-[300px] max-[1024px]:!max-w-[250px]'
+          className='max-w-[300px] max-[1024px]:!max-w-[250px] animate-pulse py-10'
         />
       </div>
 

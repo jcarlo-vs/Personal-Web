@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <Section
-      className='mb-32'
+      className='mb-44'
       id='Contact'
       size='sm'
       icon={<BsEnvelope />}

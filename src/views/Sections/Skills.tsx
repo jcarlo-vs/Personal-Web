@@ -9,7 +9,6 @@ import {
   js,
   mongoDB,
   nodejs,
-  personalLogo,
   ps,
   reactjs,
   bootstrap,

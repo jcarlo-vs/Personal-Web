@@ -1,7 +1,7 @@
 'use client'
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
-import atomImage from '../../assets/images/atomImage.png'
+import atomImage from '../../assets/icons/atomImage.png'
 import { BiHome } from 'react-icons/bi'
 import { Text } from '@/components/Text'
 import { Section } from '@/components/Section'

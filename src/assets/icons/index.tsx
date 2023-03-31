@@ -4,7 +4,6 @@ import html from './html.png'
 import js from './js.png'
 import mongoDB from './mongoDB.png'
 import nodejs from './nodejs.png'
-import personalLogo from './personalLogo.png'
 import ps from './ps.png'
 import reactjs from './reactjs.png'
 import bootstrap from './bootstrap.png'
@@ -24,7 +23,6 @@ export {
   js,
   mongoDB,
   nodejs,
-  personalLogo,
   ps,
   reactjs,
   bootstrap,
