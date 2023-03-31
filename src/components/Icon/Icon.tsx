@@ -16,6 +16,7 @@ const Icon = ({
       <a href={`#${message}`}>
         <div className={cx(className, `hover:cursor-pointer peer`)}>{icon}</div>
       </a>
+      {/* TOOLTIP TEMPORARILY DISABLED */}
       {/* <Tooltip
         message={message}
         fontSize={fontSize}

@@ -2,6 +2,8 @@ import cx from 'clsx'
 import React from 'react'
 import { TooltipProps } from './types'
 
+// TOOLTIP TEMPORARY DISABLED
+
 const Tooltip = ({ message, fontSize }: TooltipProps) => {
   return (
     <div
