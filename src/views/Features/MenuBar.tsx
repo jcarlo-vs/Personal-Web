@@ -15,37 +15,31 @@ const Menu = () => {
         'max-[1250px]:flex-row max-[1250px]:w-full max-[1250px]:right-0 max-[1250px]:!bottom-0 mb-3 max-[1250px]:py-4'
       )}>
       <Icon
-        tooltip
         fontSize='xs'
         icon={<BiHome />}
         message='Home'
       />
       <Icon
-        tooltip
         fontSize='xs'
         icon={<BsPersonCircle />}
         message='About'
       />
       <Icon
-        tooltip
         fontSize='xs'
         icon={<BsBriefcase />}
         message='Resume'
       />
       <Icon
-        tooltip
         fontSize='xs'
         icon={<SiReactos />}
         message='Skills'
       />
       <Icon
-        tooltip
         fontSize='xs'
         icon={<GiBookshelf />}
         message='Projects'
       />
       <Icon
-        tooltip
         fontSize='xs'
         icon={<BsEnvelope />}
         message='Contact'
