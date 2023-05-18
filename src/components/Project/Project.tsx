@@ -19,7 +19,8 @@ const Project = ({
       className={cx(
         'border-slate-600 border-l-4 flex  max-[768px]:flex-col max-[768px]:items-center',
         invert && 'flex-row-reverse !border-l-0 border-r-4'
-      )}>
+      )}
+    >
       {/* LEFT SECTION */}
       <div
         className='p-3 px-10 flex max-[768px]:!px-3'
@@ -28,7 +29,8 @@ const Project = ({
           WebkitBackdropFilter: 'blur(8px)',
           backdropFilter: 'blur(8px)',
           border: '1px solid rgba(255,255,255,0.05)',
-        }}>
+        }}
+      >
         <Image
           src={image}
           height={0}
@@ -41,9 +43,7 @@ const Project = ({
       {/* RIGHT SECTION */}
       <div className='max-w-sm p-10  max-[768px]:p-4'>
         {/* TITLE */}
-        <Text
-          size='2xl'
-          className='font-mono mb-10 max-[768px]:text-xl'>
+        <Text size='title' className='font-mono mb-10 max-[768px]:text-xl'>
           <span
             style={{
               background: 'linear-gradient(90deg,#00dbde,#fc00ff)',
@@ -51,7 +51,8 @@ const Project = ({
               WebkitTextFillColor: 'transparent',
               textShadow: '#9c0a88 1px 20px 100px',
             }}
-            className='tracking-wide'>
+            className='tracking-wide'
+          >
             {projectTitle}
           </span>
         </Text>
@@ -63,12 +64,7 @@ const Project = ({
         {/* TECH STACKS */}
         <article className='flex gap-1'>
           {technologyUsed?.map((t, index) => {
-            return (
-              <TechProject
-                key={index}
-                tech={t}
-              />
-            )
+            return <TechProject key={index} tech={t} />
           })}
         </article>
 
@@ -77,20 +73,24 @@ const Project = ({
           <Link
             href={demolink}
             target='_blank'
-            className='hover:cursor-pointer hover:-translate-y-1 transition-all'>
+            className='hover:cursor-pointer hover:-translate-y-1 transition-all'
+          >
             <Text
-              size='xs'
-              className='border p-2 tracking-widest border-slate-700 text-pink-500'>
+              size='normal'
+              className='border p-2 tracking-widest border-slate-700 text-pink-500'
+            >
               LIVE DEMO
             </Text>
           </Link>
           <Link
             href={githublink}
             target='_blank'
-            className='hover:cursor-pointer hover:-translate-y-1 transition-all'>
+            className='hover:cursor-pointer hover:-translate-y-1 transition-all'
+          >
             <Text
-              size='xs'
-              className='border p-2 tracking-widest border-slate-700 text-blue-500'>
+              size='normal'
+              className='border p-2 tracking-widest border-slate-700 text-white !bg-slate-500'
+            >
               GITHUB
             </Text>
           </Link>

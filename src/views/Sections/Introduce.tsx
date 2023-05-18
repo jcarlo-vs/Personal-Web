@@ -10,14 +10,16 @@ const Introduce = () => {
     <Section
       icon={<BiHome />}
       name='Introduce'
-      size='sm'
+      size='tiny'
       indicator
       className='mt-50 max-[1250px]:mt-20 relative animate__animated animate__fadeIn '
-      id='Home'>
+      id='Home'
+    >
       <div className='m-w-[800px] flex mb-20 max-[768px]:mb-14'>
         <Text
-          size='9xl'
-          className='font-thin max-[1024px]:!text-8xl max-[768px]:!text-6xl max-[500px]:!text-5xl'>
+          size='head'
+          className='font-thin !text-9xl max-[1024px]:!text-8xl max-[768px]:!text-6xl max-[500px]:!text-5xl'
+        >
           Hi, I'm
         </Text>
         <div
@@ -26,7 +28,8 @@ const Introduce = () => {
             background: 'linear-gradient(90deg,#00dbde,#fc00ff)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-          }}>
+          }}
+        >
           Juan
         </div>
       </div>
@@ -34,17 +37,20 @@ const Introduce = () => {
       <div className='[&>*]:mb-8 [&>*]:mt-8 max-[768px]:[&>*]:mt-3'>
         <Text
           className='font-medium font-mono max-[1024px]:!text-3xl max-[768px]:!text-xl '
-          size='4xl'>
+          size='hero'
+        >
           I Build Things For The Web.
         </Text>
         <Text
           className='font-thin max-[1024px]:!text-2xl max-[768px]:!text-xl !text-blue-300'
-          size='2xl'>
+          size='head'
+        >
           currently working on both
         </Text>
         <Text
           className='font-medium font-mono max-[1024px]:!text-2xl max-[768px]:!text-xl z-10'
-          size='3xl'>
+          size='head'
+        >
           FRONT-END and BACK-END Development.
         </Text>
       </div>
@@ -64,19 +70,3 @@ const Introduce = () => {
 }
 
 export default Introduce
-
-// EXTRAS
-{
-  /* <p
-          className='text-9xl text-slate-900 drop-shadow-2xl shadow-white font-thin'
-          style={{ textShadow: '#FFF 0 2px 5px' }}>
-          Juan
-        </p> */
-}
-{
-  /* <div className='text-5xl font-extrabold ml-5'>
-          <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-900 text-9xl'>
-            Juan
-          </span>
-        </div> */
-}

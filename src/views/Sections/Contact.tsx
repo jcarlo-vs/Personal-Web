@@ -25,19 +25,21 @@ const Contact = () => {
     <Section
       className='mb-44'
       id='Contact'
-      size='sm'
       icon={<BsEnvelope />}
-      name='Contact'>
+      name='Contact'
+    >
       <div
         ref={ref}
         className={cx(
           'transition delay-300',
           inView ? 'blur-0' : 'blur-md transition delay-300'
-        )}>
+        )}
+      >
         <div className='mb-8'>
           <Text
-            size='2xl'
-            className='font-mono text-4xl max-[1024px]:!text-3xl'>
+            size='head'
+            className='font-mono text-4xl max-[1024px]:!text-3xl'
+          >
             Let's Work
             <span
               style={{
@@ -46,30 +48,21 @@ const Contact = () => {
                 WebkitTextFillColor: 'transparent',
                 textShadow: '#9c0a88 1px 20px 100px',
               }}
-              className='ml-5'>
+              className='ml-5'
+            >
               Together!
             </span>
           </Text>
         </div>
 
-        <Text
-          size='xl'
-          className='text-2xl font-thin font-sans mb-5 max-[1024px]:text-xl'>
+        <Text size='head' className='-thin font-sans mb-5 max-[1024px]:text-xl'>
           senin.juancarlo@gmail.com
         </Text>
         {/* CONTACT SECTION */}
         <div className=''>
-          <form
-            className='flex flex-col gap-5'
-            onSubmit={onSubmit}>
-            <Input
-              label='FULL NAME'
-              placeholder='Your Full Name'
-            />
-            <Input
-              label='EMAIL'
-              placeholder='Your Email'
-            />
+          <form className='flex flex-col gap-5' onSubmit={onSubmit}>
+            <Input label='FULL NAME' placeholder='Your Full Name' />
+            <Input label='EMAIL' placeholder='Your Email' />
 
             <TextArea
               label='MESSAGE'
@@ -81,7 +74,8 @@ const Contact = () => {
               className='max-w-sm border border-slate-500/50 font-thin text-md rounded-2xl p-2 hover:cursor-pointer hover:-translate-y-2 transition-all tracking-wider'
               style={{
                 background: 'linear-gradient(90deg,#00dade80,#fb00ff7e)',
-              }}>
+              }}
+            >
               SEND YOUR MESSAGE
             </button>
           </form>

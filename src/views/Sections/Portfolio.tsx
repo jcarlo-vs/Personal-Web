@@ -18,16 +18,12 @@ const Portfolio = () => {
   })
 
   return (
-    <Section
-      snap='start'
-      id='Projects'
-      size='sm'
-      icon={<BsBriefcase />}
-      name='PORTFOLIO'>
+    <Section snap='start' id='Projects' icon={<BsBriefcase />} name='PORTFOLIO'>
       <div>
         <Text
-          size='2xl'
-          className='font-mono text-4xl max-[1024px]:!text-3xl max-[768px]:!text-2xl'>
+          size='head'
+          className='font-mono text-4xl max-[1024px]:!text-3xl max-[768px]:!text-2xl'
+        >
           <span
             style={{
               background: 'linear-gradient(90deg,#00dbde,#fc00ff)',
@@ -39,7 +35,8 @@ const Portfolio = () => {
             className={cx(
               'transition delay-300',
               inView ? 'blur-0' : 'blur-md transition delay-300'
-            )}>
+            )}
+          >
             Projects
           </span>
         </Text>
@@ -51,7 +48,8 @@ const Portfolio = () => {
         className={cx(
           'transition duration-700 ease-in border-white mt-14 flex flex-col gap-32',
           inView ? 'blur-0' : 'blur-md transition delay-300'
-        )}>
+        )}
+      >
         <article>
           <Project
             githublink='https://github.com/jcarlo-vs/NOTELIFY-APP'
@@ -64,9 +62,7 @@ const Portfolio = () => {
           your own data.'
           />
         </article>
-        <article
-          ref={ref}
-          className={cx()}>
+        <article ref={ref} className={cx()}>
           <Project
             demolink='https://crypto-meter.vercel.app/'
             githublink='https://github.com/jcarlo-vs/CRYPTO-METER'
@@ -77,9 +73,7 @@ const Portfolio = () => {
             description={`An all-in-one Crypto Library which users can browse most trusted Exchanges, thousands of Cryptocurrencies, Crypto News, Crypto Beginner's Guide and Crypto calculator.`}
           />
         </article>
-        <article
-          ref={ref}
-          className={cx()}>
+        <article ref={ref} className={cx()}>
           <Project
             demolink='https://picabook-app.vercel.app/login'
             githublink='https://github.com/jcarlo-vs/picabook-app'

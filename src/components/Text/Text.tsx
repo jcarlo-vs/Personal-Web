@@ -1,9 +1,9 @@
 import cx from 'clsx'
-import React from 'react'
 import { TextProps } from './types'
+import config from './config'
 
-const Text = ({ size, className, children }: TextProps) => {
-  return <p className={cx(`text-${size} text-white`, className)}>{children}</p>
+const Text = ({ className, children, size = 'normal' }: TextProps) => {
+  return <div className={cx(config[size], className)}>{children}</div>
 }
 
 export default Text

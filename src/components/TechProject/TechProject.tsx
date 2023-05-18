@@ -14,12 +14,3 @@ const TechProject = ({ tech }: TechProjectProps) => {
 }
 
 export default TechProject
-
-// https://notelify-app.vercel.app/landing
-// https://github.com/jcarlo-vs/NOTELIFY-APP
-
-// https://crypto-meter.vercel.app/
-// https://github.com/jcarlo-vs/CRYPTO-METER
-
-// https://picabook-app.vercel.app/login
-// https://github.com/jcarlo-vs/picabook-app

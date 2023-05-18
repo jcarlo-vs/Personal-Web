@@ -4,9 +4,7 @@ import { TextAreaProps } from './types'
 const TextArea = ({ label, placeholder, className }: TextAreaProps) => {
   return (
     <div className='flex flex-col max-w-xs'>
-      <label
-        htmlFor=''
-        className='font-medium text-xs'>
+      <label htmlFor='' className='font-medium text-xs'>
         {label} <span className='text-red-500'>*</span>
       </label>
 
@@ -18,7 +16,8 @@ const TextArea = ({ label, placeholder, className }: TextAreaProps) => {
         className={clsx(
           'border border-slate-400/20 bg-none bg-transparent backdrop-blur-lg text-xs font-thin tracking-wider p-2 outline-none text-slate-100',
           className
-        )}></textarea>
+        )}
+      ></textarea>
     </div>
   )
 }
