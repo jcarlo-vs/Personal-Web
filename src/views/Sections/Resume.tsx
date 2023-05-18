@@ -70,7 +70,7 @@ const Resume = () => {
               size='subtitle'
               className='max-w-2xl font-light font-sans !text-pink-500 text-md'
             >
-              MARCH 2022 - DECEMBER 2022
+              JANUARY 2022 - DECEMBER 2022
             </Text>
             <Text
               size='title'
