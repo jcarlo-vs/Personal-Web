@@ -91,7 +91,7 @@ const Resume = () => {
               size='subtitle'
               className='max-w-2xl font-light font-sans !text-pink-500 text-md'
             >
-              2017 - 2021
+              JULY 2017 - APRIL 2021
             </Text>
             <Text
               size='title'

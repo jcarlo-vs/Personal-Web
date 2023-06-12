@@ -16,37 +16,14 @@ const Menu = () => {
         'max-[1450px]:!bottom-[10%]',
         // max 900px
         'max-[900px]:flex-row max-[900px]:w-full max-[900px]:-right-1/2 max-[900px]:!bottom-0 mb-3 max-[900px]:py-4 '
-      )}>
-      <Icon
-        fontSize='xs'
-        icon={<BiHome />}
-        message='Home'
-      />
-      <Icon
-        fontSize='xs'
-        icon={<BsPersonCircle />}
-        message='About'
-      />
-      <Icon
-        fontSize='xs'
-        icon={<BsBriefcase />}
-        message='Resume'
-      />
-      <Icon
-        fontSize='xs'
-        icon={<SiReactos />}
-        message='Skills'
-      />
-      <Icon
-        fontSize='xs'
-        icon={<GiBookshelf />}
-        message='Projects'
-      />
-      <Icon
-        fontSize='xs'
-        icon={<BsEnvelope />}
-        message='Contact'
-      />
+      )}
+    >
+      <Icon fontSize='xs' icon={<BiHome />} message='Home' />
+      <Icon fontSize='xs' icon={<BsPersonCircle />} message='About' />
+      <Icon fontSize='xs' icon={<BsBriefcase />} message='Resume' />
+      <Icon fontSize='xs' icon={<SiReactos />} message='Skills' />
+      <Icon fontSize='xs' icon={<GiBookshelf />} message='Projects' />
+      <Icon fontSize='xs' icon={<BsEnvelope />} message='Contact' />
     </div>
   )
 }
