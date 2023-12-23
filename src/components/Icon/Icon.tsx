@@ -13,11 +13,8 @@ const Icon = ({
 }: IconProps) => {
   return (
     <div className='relative flex-1 flex justify-center hover:cursor-pointer'>
-      <a
-        href={`#${message}`}
-        className='hover:cursor-pointer'>
-        <div className={cx(className, `hover:cursor-pointer peer`)}>{icon}
-        <p>TESTING</p></div>
+      <a href={`#${message}`} className='hover:cursor-pointer'>
+        <div className={cx(className, `hover:cursor-pointer peer`)}>{icon}</div>
       </a>
       {/* TOOLTIP TEMPORARILY DISABLED */}
       {/* <Tooltip
